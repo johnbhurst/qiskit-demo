@@ -1,5 +1,6 @@
 \documentclass[12pt]{extarticle}
 \usepackage{physics}
+\usepackage{qcircuit}
 \usepackage{yquant}
 
 \title{Example Document}
@@ -8,7 +9,21 @@
 
 \begin{document}
 \maketitle
-\section{Example}
+\section{Examples}
+
+\begin{figure}[h]
+    \centering
+    $\begin{array}{c}
+    \Qcircuit @C=1.0em @R=.8em {
+    \lstick{\ket{\psi}}   & \qw      & \qw      \barrier{2} & \ctrl{1} \barrier{2} & \gate{H} \barrier{2} & \qw      \barrier{2} & \ctrl{2} \barrier{2} & \meter     & \qw \\
+    \lstick{\ket{0}}      & \gate{H} & \ctrl{1}             & \targ                & \qw                  & \ctrl{1}             & \qw                  & \meter     & \qw \\
+    \lstick{\ket{0}}      & \qw      & \targ                & \qw                  & \qw                  & \targ                & \gate{Z}             & \qw        & \ket{\psi} \\
+    }
+    \end{array}$
+    \caption{Teleportation using qcircuit}
+    \label{fig:teleportation_qcircuit}
+\end{figure}
+
 \begin{figure}[h]
     \centering
     \begin{tikzpicture}
@@ -32,7 +47,7 @@
             output {$\ket{\psi}$} q2;
         \end{yquant}
         \end{tikzpicture}
-    \caption{Teleportation}
-    \label{fig:teleportation}
+    \caption{Teleportation using yquant}
+    \label{fig:teleportation_yquant}
 \end{figure}
 \end{document}
