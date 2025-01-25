@@ -104,3 +104,19 @@ The libraries are:
 * qiskit-aer: high performance simulators with realistic noise models ([GitHub](https://github.com/Qiskit/qiskit-aer))
 * qiskit-ibm-runtime: implementations of Qiskit primitives for IBM Quantum hardware ([GitHub](https://github.com/Qiskit/qiskit-ibm-runtime))
 
+# Visual Studio Tips
+
+See the [Tutorial](https://code.visualstudio.com/docs/getstarted/getting-started) for full information.
+
+Use the `code` command in the terminal to open Visual Studio Code on a project or edit specific files:
+
+``` bash
+code ~/Projects/qiskit-demo     # opens a new Visual Studio Code window with the project
+code teleportation.ipynb        # opens the file in Visual Studio Code
+```
+
+Use Cmd+P to open the file-open prompt within Visual Studio Code, to quickly open any file in the project.
+Use Shift+Cmd+P to open the Command Palette, to run commands, such as `Git: Push`. or `Insert Unicode: Insert`.
+Use Ctrl+` to open or switch to the integrated terminal.
+
+
