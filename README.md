@@ -6,7 +6,7 @@ This repo contains some Qiskit samples, and instructions for a first-time user t
 * Visual Studio Code
 * Git
 
-# Software to install
+# Install Software
 
 ## macOS
 
@@ -39,7 +39,7 @@ In Visual Studio Code, click the Extensions button partway down the left side, a
 * LaTeX Workshop (James Yu)
 * Insert Unicode (brunnerh)
 
-# SSH key for GitHub
+# Create SSH key for GitHub
 
 Prior to setting up your SSH key, you need to have a GitHub account and have already set up multifactor authentication and/or passkeys.
 For example, you can use the Microsoft Authenticator mobile app for authentication.
@@ -71,7 +71,7 @@ ssh-add --apple-use-keychain ~/.ssh/john.b.hurst-github
 
 See GitHub's [Generating a new SSH key and adding it to the SSH agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) for more details.
 
-# Python virtual environment
+# Install Python libnaries
 
 With Python we use _virtual environments_ to manage project-specific libraries.
 This keeps the project's dependencies local to the project's virtual environment and prevents version clashes between different projects.
