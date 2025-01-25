@@ -154,4 +154,19 @@ git pull                     # fetches changes from the remote
 
 To configure the remote for a new repository, create the repository in GitHub and follow the instructions.
 
+# Qiskit Tips
+
+Qiskit provides two features for output that can be used with the simulators, or with real quantum systems:
+
+* The Sampler feature creates outputs of counts for combinations of measured qubits. For example, suppose you measure two qubits from your circuit, then the possible combinations are 00, 01, 10 and 11, and the Sampler provides the counts observed for each combination. These are typically then plotted in a histogram.
+* The Estimator feature lets you specify an observable, and the Estimator computes the estimation of the observable from the circuit. For example you could measure $C=\sqrt{2}(Z_1Z-0+X_1X_0)$ for studying the CHSH inequality.
+
+In addition to these, Qiskit also can produce several kinds of analytical output when using the simulators:
+
+* Circuit result as a [`Statevector`](https://docs.quantum.ibm.com/api/qiskit/qiskit.quantum_info.Statevector)
+* Circuit result as a [`DensityMatrix`](https://docs.quantum.ibm.com/api/qiskit/qiskit.quantum_info.DensityMatrix)
+* Circuit operation as a unitary matrix
+
+The [CHSH demo](chsh.ipynb) shows the Sampler and Estimator in action.
+The [teleportation demo](teleportation.ipynb) shows `Statevector` output.
 
