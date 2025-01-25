@@ -119,4 +119,39 @@ Use Cmd+P to open the file-open prompt within Visual Studio Code, to quickly ope
 Use Shift+Cmd+P to open the Command Palette, to run commands, such as `Git: Push`. or `Insert Unicode: Insert`.
 Use Ctrl+` to open or switch to the integrated terminal.
 
+# Git Tips
+
+Git has three different areas for data:
+
+* The _working copy_ is your regular files in the project folder, which may be tracked in Git and may have local (uncommitted) changes.
+* The _index_ contains the changes staged for commit.
+* The _repository_ contains the entire history of the project.
+
+The index and repository are stored under the `.git/` subdirectory.
+There can also be one or more _remotes_, which are remote repositories that can be synchronized to/from. Typically a GitHub repository is set up as a remote.
+
+The typical Git workflow is:
+
+* Sync upstream changes if any (e.g. from GitHub).
+* Make changes to files.
+* Review changes.
+* Stage changes for commit.
+* Commit.
+* Push changes to the remote (GitHub).
+
+You can do all the most common tasks in Visual Studio Code, using the Git panel in the primary side bar, or `Git:` commands in the palette.
+For complex tasks you need to use `git` commands in the terminal, which have many options.
+
+The `git` commands for the basic workflow are:
+
+``` bash
+git init                     # creates a repository
+git add ...                  # stages files or changes to index
+git commit -m"some message"  # commits staged changes
+git push                     # pushes changes to the remote
+git pull                     # fetches changes from the remote
+```
+
+To configure the remote for a new repository, create the repository in GitHub and follow the instructions.
+
 
