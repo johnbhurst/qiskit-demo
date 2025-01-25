@@ -159,7 +159,7 @@ To configure the remote for a new repository, create the repository in GitHub an
 Qiskit provides two features for output that can be used with the simulators, or with real quantum systems:
 
 * The Sampler feature creates outputs of counts for combinations of measured qubits. For example, suppose you measure two qubits from your circuit, then the possible combinations are 00, 01, 10 and 11, and the Sampler provides the counts observed for each combination. These are typically then plotted in a histogram.
-* The Estimator feature lets you specify an observable, and the Estimator computes the estimation of the observable from the circuit. For example you could measure $C=\sqrt{2}(Z_1Z_0+X_1X_0)$ for studying the CHSH inequality.
+* The Estimator feature lets you specify an observable, and the Estimator computes the estimation of the observable from the circuit. For example you could estimate $C=\sqrt{2}(Z_1Z_0+X_1X_0)$ for studying the CHSH inequality.
 
 In addition to these, Qiskit also can produce several kinds of analytical output when using the simulators:
 
