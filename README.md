@@ -1,4 +1,4 @@
-# Qiskit Demo
+# Overview
 
 This repo contains some Qiskit samples, and instructions for a first-time user to get set up with these tools for Qiskit development and Quantum Computing:
 
@@ -6,9 +6,9 @@ This repo contains some Qiskit samples, and instructions for a first-time user t
 * Visual Studio Code
 * Git
 
-## Software to install
+# Software to install
 
-### macOS
+## macOS
 
 On macOS, install [MacPorts](https://www.macports.org/) to supporting installing standard UNIX tools.
 
@@ -39,7 +39,7 @@ In Visual Studio Code, click the Extensions button partway down the left side, a
 * LaTeX Workshop (James Yu)
 * Insert Unicode (brunnerh)
 
-## SSH key for GitHub
+# SSH key for GitHub
 
 Create an SSH private/public key pair:
 
