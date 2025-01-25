@@ -49,3 +49,20 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
 
 Use a filename to indicate the key is for GitHub, e.g. `john.b.hurst-github`.
 
+Configure SSH to use the key and use Apple's keychain support for the passphrase, by putting these lines in `~/.ssh/config`:
+
+```
+Host github.com
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_ed25519
+```
+
+Add the key and passphrase to the Apple keychain:
+
+``` bash
+ssh-add --apple-use-keychain ~/.ssh/john.b.hurst-github
+```
+
+See GitHub's [Generating a new SSH key and adding it to the SSH agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) for more details.
+
