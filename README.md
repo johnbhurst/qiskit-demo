@@ -34,10 +34,11 @@ Install [MacTex 2024](https://www.tug.org/mactex/mactex-download.html).
 
 In Visual Studio Code, click the Extensions button partway down the left side, and search for an install these extensions:
 
-* Python (Microsoft)
+* GitHub Copilot (GitHub)
+* Insert Unicode (brunnerh)
 * Jupyter (Microsoft)
 * LaTeX Workshop (James Yu)
-* Insert Unicode (brunnerh)
+* Python (Microsoft)
 
 # Create SSH key for GitHub
 
