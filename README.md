@@ -12,7 +12,7 @@ This repo contains some Qiskit samples, and instructions for a first-time user t
 
 On macOS, install [MacPorts](https://www.macports.org/) to supporting installing standard UNIX tools.
 
-Install Xxcode. Then install the command-line tools by running
+Install Xcode. Then install the command-line tools by running
 
 ``` bash
 xcode-select --install
@@ -32,7 +32,7 @@ Install [Python3](https://www.python.org/downloads/macos/).
 
 Install [MacTex 2024](https://www.tug.org/mactex/mactex-download.html).
 
-In Visual Studio Code, click the Extensions button partway down the left side, and search for an install these extensions:
+In Visual Studio Code, click the Extensions button partway down the left side, and search for and install these extensions:
 
 * GitHub Copilot (GitHub)
 * Insert Unicode (brunnerh)
@@ -72,7 +72,7 @@ ssh-add --apple-use-keychain ~/.ssh/john.b.hurst-github
 
 See GitHub's [Generating a new SSH key and adding it to the SSH agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) for more details.
 
-# Install Python libnaries
+# Install Python libraries
 
 With Python we use _virtual environments_ to manage project-specific libraries.
 This keeps the project's dependencies local to the project's virtual environment and prevents version clashes between different projects.
