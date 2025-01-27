@@ -120,6 +120,36 @@ Use Cmd+P to open the file-open prompt within Visual Studio Code, to quickly ope
 Use Shift+Cmd+P to open the Command Palette, to run commands, such as `Git: Push`. or `Insert Unicode: Insert`.
 Use Ctrl+` to open or switch to the integrated terminal.
 
+If you install the Insert Unicode extension, you can use Unicode characters for math and other things in your Markdown and Python code.
+
+In Markdown we can put math inside `$` characters or `$$` characters for inline or block math, respectively, using LaTeX syntax.
+So for example we can write
+
+```
+$$
+\ket{\psi} = \ket{0} \otimes \left( \cos(\theta)\ket{0} + i\sin(\theta)\ket{1} \right)
+$$
+```
+
+for
+
+$$
+\ket{\psi} = \ket{0} \otimes \left( \cos(\theta)\ket{0} + i\sin(\theta)\ket{1} \right)
+$$
+
+But we can also write this using Unicode characters, in either Markdown or Python, and it works as long as the font has all the necessary Unicode characters:
+
+```
+|ψ⟩ = |0⟩ ⊗ (cos(θ)|0⟩ + i sin(θ)|1⟩)
+```
+
+If we want we can use greek letters for variables in Python code, for example:
+
+``` python
+from math import cos, sin, pi as π
+```
+
+
 # Git Tips
 
 Git has three different areas for data:
