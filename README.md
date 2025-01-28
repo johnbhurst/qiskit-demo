@@ -84,7 +84,7 @@ mkdir ~/Projects/qiskit-demo
 cd ~/Projects/qiskit-demo
 python3 -m venv venv
 source venv/bin/activate
-pip install -upgrade pip
+pip install --upgrade pip
 pip install jupyter matplotlib nbdime pylatexenc qiskit qiskit-aer qiskit-ibm-runtime
 ```
 
